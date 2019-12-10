@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Rename this config.sh.example -> config.sh 
+# update your values here
+# get them from https://www.wunderground.com/member/devices
+
+WG_HOST="webcam.wunderground.com"
+WG_USER="WU_xxxxxCAM1"
+WG_PASSWD=""
+IMAGE_FILE="image.jpg"
+CAM_URL="http://192.168.1.140/snapshot.jpg?size=-1x-1&download=yes"
+IMAGEPREFIX="denver"
+STATHAT_KEY="your_key_here"
+
+echo $WG_HOST
+echo $WG_USER
+echo $WG_PASSWD
+echo $IMAGE_FILE
+echo $CAM_URL
+echo $IMAGEPREFIX
+echo $STATHAT_KEY
+
+DATED_FILENAME=caps_$(date '+%Y%m%d').tar.gz
+echo $DATED_FILENAME
+
